@@ -64,12 +64,12 @@ function setImages() {
 }
 
 // Set the images on page load and after refresh
-window.onload = setImages;
+// window.onload = setImages;
 
 const refreshButton = document.getElementById("refreshButton");
 const audio = document.getElementById("myAudio");
 
-  refreshButton.addEventListener("click", setImages);
+//   refreshButton.addEventListener("click", setImages);
   refreshButton.addEventListener("click",  function() {
     audio.play();
     rollImages(setImages);
